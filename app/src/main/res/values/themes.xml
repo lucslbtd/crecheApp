@@ -13,4 +13,11 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="btn_login_style">
+        <item name="android:background">@drawable/circle_blue_button</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+
 </resources>

@@ -12,4 +12,6 @@
     <string name="btn_cadastro_pai">Cadastro de Responsável</string>
     <string name="btn_cadastro_creche">Cadastro de Creche</string>
     <string name="txt_back_to_login">Já é cadastrado? \n Clique aqui para fazer login</string>
+
+
 </resources>

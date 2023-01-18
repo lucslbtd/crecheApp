@@ -13,10 +13,5 @@
     <string name="btn_cadastro_creche">Cadastro de Creche</string>
     <string name="txt_back_to_login">Já é cadastrado? \n Clique aqui para fazer login</string>
 
-    <string-array name="gender_array">
-        <item>Masculine</item>
-        <item>Feminine</item>
-        <item>Others</item>
-    </string-array>
 
 </resources>

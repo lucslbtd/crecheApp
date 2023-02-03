@@ -9,6 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="login_txt_color">#5C8599</color>
     <color name="background_color">#F2F3F5</color>
+    <color name="sign_up_background_color">#EBF2F5</color>
+    <color name="top_screen_bar">#F9FAFC</color>
     <color name="button_login_color">#15C3D6</color>
     <color name="gray_login_screen">#8FA7B2</color>
+    <color name="ellipsis_button">#ADC9CC</color>
 </resources>

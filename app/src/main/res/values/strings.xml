@@ -5,14 +5,20 @@
     <string name="txt_email">Email</string>
     <string name="txt_sucess">Sucesso</string>
     <string name="email_example">josefilho@gmail.com</string>
-    <string name="txt_password">Password</string>
+    <string name="txt_password">Senha</string>
     <string name="password_example">*******</string>
     <string name="btn_txt_continuar">Continuar</string>
+    <string name="btn_txt_sign_up">Cadastrar</string>
     <string name="txt_cadastro_login">Não é cadastrado? Crie sua conta</string>
     <string name="txt_cadastro">Cadastro</string>
     <string name="btn_cadastro_pai">Cadastro de Responsável</string>
     <string name="btn_cadastro_creche">Cadastro de Creche</string>
     <string name="txt_back_to_login">Já é cadastrado? \n Clique aqui para fazer login</string>
+    <string name="ellipsis">•</string>
+    <string name="arrow_button">arrow_button</string>
+    <string name="cadastro_de_responsavel">Cadastro de Responsável</string>
+    <string name="credenciais">Credenciais</string>
+    <string name="confirm_password">Confirme a Senha</string>
 
 
 </resources>

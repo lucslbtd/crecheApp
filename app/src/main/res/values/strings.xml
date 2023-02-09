@@ -17,8 +17,13 @@
     <string name="ellipsis">•</string>
     <string name="arrow_button">arrow_button</string>
     <string name="cadastro_de_responsavel">Cadastro de Responsável</string>
+    <string name="cadastro_de_creche">Cadastro de Creche</string>
     <string name="credenciais">Credenciais</string>
     <string name="confirm_password">Confirme a Senha</string>
-
-
+    <string name="info_basicas">Informações Básicas</string>
+    <string name="nome_creche">Nome da Creche</string>
+    <string name="nome_creche_responsavel">Nome do Responsável da Creche</string>
+    <string name="contato">Contato</string>
+    <string name="sobre_creche">Sobre a Creche</string>
+    <string name="limite_caractere">Máximo de 300 caracteres</string>
 </resources>

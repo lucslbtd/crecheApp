@@ -10,6 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CrecheApp">
 
+        <activity
+            android:name=".loginFlow.ui.login.LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".loginFlow.ui.login.SingUpActivity"
+            android:exported="true"
+            android:label="@string/sing_up_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -28,25 +42,7 @@
         <activity
             android:name=".MapsActivity"
             android:exported="true"
-            android:label="@string/title_activity_maps">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-            <!-- Other elements -->
-            <activity
-                android:name=".ChatActivity"
-                android:label="Chat"
-                android:exported="true">
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
-                    <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
-            </activity>
-
+            android:label="@string/title_activity_maps"></activity>
     </application>
 
 </manifest>

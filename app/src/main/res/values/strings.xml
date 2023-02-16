@@ -21,10 +21,10 @@
     <string name="credenciais">Credenciais</string>
     <string name="confirm_password">Confirme a Senha</string>
     <string name="info_basicas">Informações Básicas</string>
-    <string name="nome_creche">Nome da Creche</string>
-    <string name="nome_creche_responsavel">Nome do Responsável da Creche</string>
+    <string name="nome_responsavel">Nome do(a) Responsável</string>
+    <string name="data_nascimento">Data de Nascimento</string>
     <string name="contato">Contato</string>
-    <string name="sobre_creche">Sobre a Creche</string>
+    <string name="cpf">CPF</string>
     <string name="limite_caractere">Máximo de 300 caracteres</string>
     <string name="endereco">Endereço</string>
     <string name="rua">Rua</string>
@@ -39,4 +39,5 @@
     <string name="estado_field">Estado</string>
     <string name="cidade_hint">Recife</string>
     <string name="rua_hint">Rua Arco Íris, 231</string>
+    <string name="genero">Gênero</string>
 </resources>

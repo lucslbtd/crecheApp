@@ -89,10 +89,7 @@
                 android:text="@string/rua"
                 android:textColor="@color/gray_login_screen"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@id/rua_txt"
-                app:layout_constraintTop_toBottomOf="@id/parent"
-                app:layout_constraintStart_toStartOf="@id/parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                 />
 
             <EditText
                 android:id="@+id/rua_txt"
@@ -106,10 +103,7 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/gray_login_screen"
                 android:textColorHint="@color/login_txt_color"
-                app:layout_constraintTop_toBottomOf="@id/rua"
-                app:layout_constraintBottom_toTopOf="@id/cidade_txt"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                />
 
             <TextView
                 android:id="@+id/cidade"
@@ -119,10 +113,7 @@
                 android:text="@string/cidade_field"
                 android:textColor="@color/gray_login_screen"
                 android:textSize="20sp"
-                app:layout_constraintTop_toBottomOf="@id/rua_txt"
-                app:layout_constraintBottom_toTopOf="@id/cidade_txt"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                />
 
             <EditText
                 android:id="@+id/cidade_txt"
@@ -136,10 +127,7 @@
                 android:paddingStart="15dp"
                 android:textColor="@color/gray_login_screen"
                 android:textColorHint="@color/login_txt_color"
-                app:layout_constraintTop_toBottomOf="@id/cidade"
-                app:layout_constraintBottom_toTopOf="@id/estado"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                 />
 
             <TextView
                 android:id="@+id/estado"
@@ -149,10 +137,7 @@
                 android:text="@string/estado_field"
                 android:textColor="@color/gray_login_screen"
                 android:textSize="20sp"
-                app:layout_constraintTop_toBottomOf="@id/cidade_txt"
-                app:layout_constraintBottom_toTopOf="@id/estado_txt"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                 />
 
             <EditText
                 android:id="@+id/estado_txt"
@@ -166,10 +151,7 @@
                 android:paddingStart="15dp"
                 android:textColor="@color/gray_login_screen"
                 android:textColorHint="@color/login_txt_color"
-                app:layout_constraintTop_toBottomOf="@id/estado"
-                app:layout_constraintBottom_toTopOf="@id/bairro"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                 />
 
             <TextView
                 android:id="@+id/bairro"
@@ -179,10 +161,7 @@
                 android:text="@string/bairro_field"
                 android:textColor="@color/gray_login_screen"
                 android:textSize="20sp"
-                app:layout_constraintTop_toBottomOf="@id/estado_txt"
-                app:layout_constraintBottom_toTopOf="@id/bairro_txt"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                 />
 
             <EditText
                 android:id="@+id/bairro_txt"
@@ -196,10 +175,7 @@
                 android:paddingStart="15dp"
                 android:textColor="@color/gray_login_screen"
                 android:textColorHint="@color/login_txt_color"
-                app:layout_constraintTop_toBottomOf="@id/bairro"
-                app:layout_constraintBottom_toTopOf="@id/complemento"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                 />
 
             <TextView
                 android:id="@+id/complemento"
@@ -209,10 +185,7 @@
                 android:text="@string/complemento"
                 android:textColor="@color/gray_login_screen"
                 android:textSize="20sp"
-                app:layout_constraintTop_toBottomOf="@id/bairro_txt"
-                app:layout_constraintBottom_toTopOf="@id/complemento_txt"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                 />
 
             <EditText
                 android:id="@+id/complemento_txt"
@@ -226,10 +199,7 @@
                 android:paddingStart="15dp"
                 android:textColor="@color/gray_login_screen"
                 android:textColorHint="@color/login_txt_color"
-                app:layout_constraintTop_toBottomOf="@id/complemento"
-                app:layout_constraintBottom_toTopOf="@id/cep"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                 />
 
             <TextView
                 android:id="@+id/cep"
@@ -239,10 +209,7 @@
                 android:text="@string/cep_field"
                 android:textColor="@color/gray_login_screen"
                 android:textSize="20sp"
-                app:layout_constraintTop_toBottomOf="@id/complemento_txt"
-                app:layout_constraintBottom_toTopOf="@id/cep_txt"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                 />
 
             <EditText
                 android:id="@+id/cep_txt"
@@ -256,10 +223,7 @@
                 android:paddingStart="15dp"
                 android:textColor="@color/gray_login_screen"
                 android:textColorHint="@color/login_txt_color"
-                app:layout_constraintBottom_toTopOf="@id/cep_txt"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/cep" />
+                 />
 
         </LinearLayout>
 
@@ -272,7 +236,7 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@id/proceed_button"
-        app:layout_constraintEnd_toEndOf="nested_scroll_view"
+        app:layout_constraintEnd_toEndOf="@id/nested_scroll_view"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nested_scroll_view">
 

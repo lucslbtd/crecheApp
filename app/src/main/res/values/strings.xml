@@ -26,4 +26,17 @@
     <string name="contato">Contato</string>
     <string name="sobre_creche">Sobre a Creche</string>
     <string name="limite_caractere">Máximo de 300 caracteres</string>
+    <string name="endereco">Endereço</string>
+    <string name="rua">Rua</string>
+    <string name="cep_hint">xxx.xxx-xx</string>
+    <string name="cep_field">CEP</string>
+    <string name="detalhes_endereco">Ap 212</string>
+    <string name="complemento">Complemento</string>
+    <string name="bairro_hint">Boa Viagem</string>
+    <string name="bairro_field">Bairro</string>
+    <string name="estado_hint">Pernambuco</string>
+    <string name="cidade_field">Cidade</string>
+    <string name="estado_field">Estado</string>
+    <string name="cidade_hint">Recife</string>
+    <string name="rua_hint">Rua Arco Íris, 231</string>
 </resources>

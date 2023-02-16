@@ -42,4 +42,10 @@
     <string name="cidade_hint">Recife</string>
     <string name="rua_hint">Rua Arco Íris, 231</string>
     <string name="genero">Gênero</string>
+    <string name="cadastro_de_crianca">Cadastro de Criança</string>
+    <string name="genero_feminino">Feminino</string>
+    <string name="genero_masculino">Masculino</string>
+    <string name="outros_generos">Outros</string>
+    <string name="date_hint">dd/mm/aaaa</string>
+    <string name="informacoes_crianca">Informações da Criança</string>
 </resources>

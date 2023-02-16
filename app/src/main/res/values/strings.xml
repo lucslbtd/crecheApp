@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">crecheApp</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="sing_up_activity">SingUpActivity</string>
     <string name="txt_login">Login</string>
     <string name="txt_email">Email</string>
     <string name="txt_sucess">Sucesso</string>

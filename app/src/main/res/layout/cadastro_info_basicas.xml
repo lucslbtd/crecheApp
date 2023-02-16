@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/tab_layout"
+        android:id="@+id/top_tab_layout"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@color/top_screen_bar"
@@ -24,7 +24,6 @@
             android:gravity="center"
             android:padding="10dp"
             android:src="@drawable/arrow_image"
-            app:layout_constraintStart_toStartOf="@id/cadastro_responsavel_txt"
             android:contentDescription="@string/arrow_button" />
 
         <TextView
@@ -36,10 +35,7 @@
             android:text="@string/cadastro_de_responsavel"
             android:textColor="@color/gray_login_screen"
             android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintHeight="wrap_content"
-            app:layout_constraintVertical_bias="0.1"
-            app:layout_constraintWidth="wrap_content" />
+            android:textStyle="bold" />
     </LinearLayout>
 
     <TextView
@@ -55,7 +51,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/nested_scroll_view"
-        app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+        app:layout_constraintTop_toBottomOf="@id/top_tab_layout" />
 
     <View
         android:id="@+id/line"
@@ -79,7 +75,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
             <TextView
                 android:id="@+id/nome_creche_txt"
@@ -88,11 +87,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/nome_responsavel"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="14sp"
-                app:layout_constraintBottom_toTopOf="@id/nome_creche"
-                app:layout_constraintTop_toBottomOf="@id/parent"
-                app:layout_constraintStart_toStartOf="@id/parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                android:textSize="14sp"/>
 
             <EditText
                 android:id="@+id/nome_creche"
@@ -105,11 +100,7 @@
                 android:paddingStart="15dp"
                 android:inputType="text"
                 android:textColor="@color/gray_login_screen"
-                android:textColorHint="@color/gray_login_screen"
-                app:layout_constraintTop_toBottomOf="@id/nome_creche_txt"
-                app:layout_constraintBottom_toTopOf="@id/nome_responsavel_creche_txt"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:textColorHint="@color/gray_login_screen" />
 
             <TextView
                 android:id="@+id/nome_responsavel_creche_txt"
@@ -118,11 +109,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/data_nascimento"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/nome_creche"
-                app:layout_constraintBottom_toTopOf="@id/data_nascimento_txt"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/data_nascimento_txt"
@@ -131,15 +118,11 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/edit_text_circle_background"
                 android:textAlignment="textStart"
-                android:hint="dd/mm/aaaa"
+                android:hint="@string/date_hint"
                 android:paddingStart="15dp"
                 android:textColor="@color/gray_login_screen"
                 android:textColorHint="@color/gray_login_screen"
-                android:inputType="date"
-                app:layout_constraintTop_toBottomOf="@id/nome_responsavel_creche_txt"
-                app:layout_constraintBottom_toTopOf="@id/contact_txt"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                android:inputType="date"/>
 
             <TextView
                 android:id="@+id/contact_txt"
@@ -148,11 +131,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/contato"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/data_nascimento_txt"
-                app:layout_constraintBottom_toTopOf="@id/contact"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/contact"
@@ -166,11 +145,7 @@
                 android:hint="(xx) xxxxx-xxxx"
                 android:paddingStart="15dp"
                 android:textColor="@color/gray_login_screen"
-                android:textColorHint="@color/gray_login_screen"
-                app:layout_constraintTop_toBottomOf="@id/contact_txt"
-                app:layout_constraintBottom_toTopOf="@id/cpf_txt"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:textColorHint="@color/gray_login_screen" />
 
             <TextView
                 android:id="@+id/cpf_txt"
@@ -179,11 +154,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/cpf"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/contact"
-                app:layout_constraintBottom_toTopOf="@id/cpf_field"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                android:textSize="14sp"/>
 
             <EditText
                 android:id="@+id/cpf_field"
@@ -197,11 +168,7 @@
                 android:hint="xxx.xxx.xxx-xx"
                 android:paddingStart="15dp"
                 android:textColor="@color/gray_login_screen"
-                android:textColorHint="@color/gray_login_screen"
-                app:layout_constraintTop_toBottomOf="@id/cpf_txt"
-                app:layout_constraintBottom_toTopOf="@id/cpf_field"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:textColorHint="@color/gray_login_screen" />
 
             <TextView
                 android:id="@+id/gender_field"
@@ -210,11 +177,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/genero"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/cpf_field"
-                app:layout_constraintBottom_toTopOf="@id/cpf_field"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"

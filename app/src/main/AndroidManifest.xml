@@ -12,8 +12,7 @@
 
         <activity
             android:name=".loginFlow.ui.login.LoginActivity"
-            android:exported="false"
-            android:label="@string/title_activity_login" />
+            android:exported="false" />
         <activity
             android:name=".loginFlow.ui.login.SingUpActivity"
             android:exported="true"

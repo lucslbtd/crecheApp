@@ -48,4 +48,11 @@
     <string name="outros_generos">Outros</string>
     <string name="date_hint">dd/mm/aaaa</string>
     <string name="informacoes_crianca">Informações da Criança</string>
+    <string name="perfil">Perfil</string>
+    <string name="notification_icon">View notifications</string>
+    <string name="success_image">Success image</string>
+    <string name="nome_filho">Nome do filho(a)</string>
+    <string name="idade_filho">Idade do filho(a)</string>
+    <string name="creche_atual">Creche atual</string>
+    <string name="sair">Sair</string>
 </resources>

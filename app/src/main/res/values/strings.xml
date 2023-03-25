@@ -56,4 +56,5 @@
     <string name="creche_atual">Creche atual</string>
     <string name="sair">Sair</string>
     <string name="endereco_hint">Inserir endereço</string>
+    <string name="conversas">Conversas</string>
 </resources>

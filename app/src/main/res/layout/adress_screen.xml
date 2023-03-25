@@ -93,7 +93,7 @@
                 android:background="@drawable/edit_text_circle_background"
                 android:hint="@string/rua_hint"
                 android:inputType="text"
-                android:paddingStart="15dp"
+                android:paddingStart="20dp"
                 android:textAlignment="textStart"
                 android:textColor="@color/gray_login_screen"
                 android:textColorHint="@color/login_txt_color" />

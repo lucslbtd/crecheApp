@@ -116,7 +116,7 @@
             android:gravity="start"
             android:text="@string/nome_filho"
             android:textColor="@color/login_txt_color"
-            android:textSize="13sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nome_perfil"/>
@@ -142,7 +142,7 @@
             android:gravity="start"
             android:text="@string/idade_filho"
             android:textColor="@color/login_txt_color"
-            android:textSize="13sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nome_filho"/>
@@ -168,7 +168,7 @@
             android:gravity="start"
             android:text="@string/creche_atual"
             android:textColor="@color/login_txt_color"
-            android:textSize="13sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/idade_filho"/>
@@ -194,7 +194,7 @@
             android:gravity="start"
             android:text="@string/contato"
             android:textColor="@color/login_txt_color"
-            android:textSize="13sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/creche_atual"/>
@@ -218,7 +218,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="120dp"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/filho_info"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_bar">
@@ -253,11 +253,8 @@
         android:id="@+id/bottom_navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:background="@color/top_screen_bar"
         android:orientation="horizontal"
-        android:paddingTop="10dp"
-        android:paddingBottom="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/exit_layout">
 

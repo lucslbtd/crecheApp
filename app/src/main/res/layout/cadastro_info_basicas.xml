@@ -87,7 +87,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/nome_responsavel"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="14sp"/>
+                android:textSize="20sp"/>
 
             <EditText
                 android:id="@+id/nome_creche"
@@ -97,7 +97,7 @@
                 android:background="@drawable/edit_text_circle_background"
                 android:hint="José Farias Lima"
                 android:textAlignment="textStart"
-                android:paddingStart="15dp"
+                android:paddingStart="20dp"
                 android:inputType="text"
                 android:textColor="@color/gray_login_screen"
                 android:textColorHint="@color/gray_login_screen" />
@@ -109,7 +109,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/data_nascimento"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="14sp" />
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/data_nascimento_txt"
@@ -131,7 +131,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/contato"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="14sp" />
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/contact"
@@ -154,7 +154,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/cpf"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="14sp"/>
+                android:textSize="20sp"/>
 
             <EditText
                 android:id="@+id/cpf_field"
@@ -177,7 +177,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/genero"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="14sp" />
+                android:textSize="20sp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -194,7 +194,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
-                    android:text="Feminino"
+                    android:text="@string/genero_feminino"
+                    android:textSize="15sp"
                     android:textColor="@color/gray_login_screen"
                     android:checked="true"
                     android:buttonTint="@color/gender_radio_button" />
@@ -204,7 +205,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
-                    android:text="Masculino"
+                    android:textSize="15sp"
+                    android:text="@string/genero_masculino"
                     android:textColor="@color/gray_login_screen"
                     android:buttonTint="@color/gender_radio_button" />
 
@@ -213,7 +215,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
-                    android:text="Outros"
+                    android:textSize="15sp"
+                    android:text="@string/outros_generos"
                     android:textColor="@color/gray_login_screen"
                     android:buttonTint="@color/gender_radio_button" />
 

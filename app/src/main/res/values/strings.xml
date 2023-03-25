@@ -57,4 +57,7 @@
     <string name="sair">Sair</string>
     <string name="endereco_hint">Inserir endereço</string>
     <string name="conversas">Conversas</string>
+    <string name="creche_ex">Creche Saber e Viver</string>
+    <string name="hora_ex">15:00</string>
+    <string name="txt_ex">Tudo bem, vamos deixar as coisas dele prontas!</string>
 </resources>

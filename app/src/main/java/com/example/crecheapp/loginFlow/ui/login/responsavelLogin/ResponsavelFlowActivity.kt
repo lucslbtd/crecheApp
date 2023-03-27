@@ -2,6 +2,7 @@ package com.example.crecheapp.loginFlow.ui.login.responsavelLogin
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.crecheapp.R
 import com.example.crecheapp.databinding.ParentSingUpFlowBinding
 
 class ResponsavelFlowActivity : AppCompatActivity() {
@@ -16,7 +17,7 @@ class ResponsavelFlowActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportFragmentManager.beginTransaction().apply {
-            add(basicInfoFragment, "Basic Info")
+            add(R.id.fragment_container, basicInfoFragment, "Basic Info")
             commit()
         }
     }

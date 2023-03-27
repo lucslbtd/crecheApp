@@ -19,13 +19,11 @@
         app:layout_constraintVertical_bias="0.0">
 
         <androidx.appcompat.widget.Toolbar
-            xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:elevation="4dp"
             android:outlineProvider="bounds"
-            android:shapeAppearance="@style/ToolbarShapeAppearance"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
 
             <ImageView

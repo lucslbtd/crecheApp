@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
     android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/tab_layout"
+        android:id="@+id/top_tab_layout"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@color/top_screen_bar"
@@ -25,8 +24,7 @@
             android:contentDescription="@string/arrow_button"
             android:gravity="center"
             android:padding="10dp"
-            android:src="@drawable/arrow_image"
-            app:layout_constraintStart_toStartOf="@id/cadastro_responsavel_txt" />
+            android:src="@drawable/arrow_image" />
 
         <TextView
             android:id="@+id/cadastro_responsavel_txt"
@@ -37,10 +35,7 @@
             android:text="@string/cadastro_de_responsavel"
             android:textColor="@color/gray_login_screen"
             android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintHeight="wrap_content"
-            app:layout_constraintVertical_bias="0.1"
-            app:layout_constraintWidth="wrap_content" />
+            android:textStyle="bold" />
     </LinearLayout>
 
     <TextView
@@ -56,7 +51,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/nested_scroll_view"
-        app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+        app:layout_constraintTop_toBottomOf="@id/top_tab_layout" />
 
     <View
         android:id="@+id/line"
@@ -88,8 +83,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/rua"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="20sp"
-                 />
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/rua_txt"
@@ -102,8 +96,7 @@
                 android:paddingStart="15dp"
                 android:textAlignment="textStart"
                 android:textColor="@color/gray_login_screen"
-                android:textColorHint="@color/login_txt_color"
-                />
+                android:textColorHint="@color/login_txt_color" />
 
             <TextView
                 android:id="@+id/cidade"
@@ -112,8 +105,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/cidade_field"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="20sp"
-                />
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/cidade_txt"
@@ -126,8 +118,7 @@
                 android:textAlignment="textStart"
                 android:paddingStart="15dp"
                 android:textColor="@color/gray_login_screen"
-                android:textColorHint="@color/login_txt_color"
-                 />
+                android:textColorHint="@color/login_txt_color" />
 
             <TextView
                 android:id="@+id/estado"
@@ -136,8 +127,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/estado_field"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="20sp"
-                 />
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/estado_txt"
@@ -150,8 +140,7 @@
                 android:textAlignment="textStart"
                 android:paddingStart="15dp"
                 android:textColor="@color/gray_login_screen"
-                android:textColorHint="@color/login_txt_color"
-                 />
+                android:textColorHint="@color/login_txt_color" />
 
             <TextView
                 android:id="@+id/bairro"
@@ -160,8 +149,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/bairro_field"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="20sp"
-                 />
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/bairro_txt"
@@ -174,8 +162,7 @@
                 android:textAlignment="textStart"
                 android:paddingStart="15dp"
                 android:textColor="@color/gray_login_screen"
-                android:textColorHint="@color/login_txt_color"
-                 />
+                android:textColorHint="@color/login_txt_color" />
 
             <TextView
                 android:id="@+id/complemento"
@@ -184,8 +171,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/complemento"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="20sp"
-                 />
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/complemento_txt"
@@ -198,8 +184,7 @@
                 android:textAlignment="textStart"
                 android:paddingStart="15dp"
                 android:textColor="@color/gray_login_screen"
-                android:textColorHint="@color/login_txt_color"
-                 />
+                android:textColorHint="@color/login_txt_color" />
 
             <TextView
                 android:id="@+id/cep"
@@ -208,8 +193,7 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/cep_field"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="20sp"
-                 />
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/cep_txt"
@@ -222,9 +206,7 @@
                 android:textAlignment="textStart"
                 android:paddingStart="15dp"
                 android:textColor="@color/gray_login_screen"
-                android:textColorHint="@color/login_txt_color"
-                 />
-
+                android:textColorHint="@color/login_txt_color" />
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
@@ -257,7 +239,7 @@
             android:src="@drawable/icon_blue_ellipse" />
 
         <ImageButton
-            android:id="@+id/ellipset_3"
+            android:id="@+id/ellipse_3"
             android:background="@color/background_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -265,7 +247,7 @@
             android:src="@drawable/icon_gray_ellipse" />
 
         <ImageButton
-            android:id="@+id/dellipse_4"
+            android:id="@+id/ellipse_4"
             android:background="@color/background_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

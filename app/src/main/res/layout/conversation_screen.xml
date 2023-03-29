@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:id="@+id/top_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/top_screen_bar"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/img_back_button"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:background="@color/top_screen_bar"
+            android:contentDescription="@string/arrow_button"
+            android:gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/arrow_image"/>
+
+        <TextView
+            android:id="@+id/header_txt_conversas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_gravity="center"
+            android:text="Creche Saber e Viver"
+            android:textColor="@color/gray_login_screen"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_messages_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_tab_layout"
+        android:layout_above="@+id/chat_input_layout"/>
+
+    <LinearLayout
+        android:id="@+id/chat_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/chat_input_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Digite sua mensagem..."
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:padding="8dp"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/send_button"
+            android:layout_width="47dp"
+            android:layout_height="44dp"
+            android:src="@drawable/send_message_icon" />
+    </LinearLayout>
+</RelativeLayout>

@@ -48,4 +48,16 @@
     <string name="outros_generos">Outros</string>
     <string name="date_hint">dd/mm/aaaa</string>
     <string name="informacoes_crianca">Informações da Criança</string>
+    <string name="perfil">Perfil</string>
+    <string name="notification_icon">View notifications</string>
+    <string name="success_image">Success image</string>
+    <string name="nome_filho">Nome do filho(a)</string>
+    <string name="idade_filho">Idade do filho(a)</string>
+    <string name="creche_atual">Creche atual</string>
+    <string name="sair">Sair</string>
+    <string name="endereco_hint">Inserir endereço</string>
+    <string name="conversas">Conversas</string>
+    <string name="creche_ex">Creche Saber e Viver</string>
+    <string name="hora_ex">15:00</string>
+    <string name="txt_ex">Tudo bem, vamos deixar as coisas dele prontas!</string>
 </resources>

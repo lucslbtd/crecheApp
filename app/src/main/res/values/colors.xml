@@ -15,4 +15,5 @@
     <color name="gender_radio_button">#15B6D6</color>
     <color name="gray_login_screen">#8FA7B2</color>
     <color name="ellipsis_button">#ADC9CC</color>
+    <color name="exit_button">#F90101</color>
 </resources>

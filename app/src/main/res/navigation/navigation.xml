@@ -16,6 +16,39 @@
     <fragment
         android:id="@+id/adressInfoFragment"
         android:name="com.example.crecheapp.loginFlow.ui.login.responsavelLogin.AdressInfoFragment"
-        android:label="AdressInfoFragment" />
+        android:label="AdressInfoFragment" >
+        <action
+            android:id="@+id/action_adressInfoFragment_to_childInfoFragment"
+            app:destination="@id/childInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/childInfoFragment"
+        android:name="com.example.crecheapp.loginFlow.ui.login.responsavelLogin.ChildInfoFragment"
+        android:label="ChildInfoFragment" >
+        <action
+            android:id="@+id/action_childInfoFragment_to_credentialsFragment"
+            app:destination="@id/credentialsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/credentialsFragment"
+        android:name="com.example.crecheapp.loginFlow.ui.login.responsavelLogin.CredentialsFragment"
+        android:label="CredentialsFragment" >
+        <action
+            android:id="@+id/action_credentialsFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="com.example.crecheapp.loginFlow.ui.login.responsavelLogin.SuccessFragment"
+        android:label="SuccessFragment" >
+        <action
+            android:id="@+id/action_successFragment_to_mapsActivity"
+            app:destination="@id/mapsActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="com.example.crecheapp.MapsActivity"
+        android:label="activity_maps"
+        tools:layout="@layout/activity_maps" />
 
 </navigation>

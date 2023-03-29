@@ -26,7 +26,7 @@
             android:src="@drawable/arrow_image"/>
 
         <TextView
-            android:id="@+id/header_txt_conversas"
+            android:id="@+id/cadastro_crianca_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -76,10 +76,10 @@
             android:id="@+id/nome_crianca_field"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20sp"
-            android:text="@string/nome_filho"
+            android:layout_marginTop="15dp"
+            android:text="Nome do Filho(a)"
             android:textColor="@color/gray_login_screen"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/nome_crianca_txt"
@@ -93,7 +93,7 @@
             android:textAlignment="textStart"
             android:textColor="@color/gray_login_screen"
             android:textColorHint="@color/gray_login_screen"
-            android:textSize="15sp" />
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/data_nascimento_field"
@@ -102,7 +102,7 @@
             android:layout_marginTop="15dp"
             android:text="@string/data_nascimento"
             android:textColor="@color/gray_login_screen"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/data_nascimento_txt"
@@ -116,7 +116,7 @@
             android:textAlignment="textStart"
             android:textColor="@color/gray_login_screen"
             android:textColorHint="@color/gray_login_screen"
-            android:textSize="15sp" />
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/gender_field"
@@ -125,7 +125,7 @@
             android:layout_marginTop="15dp"
             android:text="@string/genero"
             android:textColor="@color/gray_login_screen"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <LinearLayout
             android:id="@+id/gender_layout"
@@ -146,7 +146,7 @@
                 android:checked="true"
                 android:text="@string/genero_feminino"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
             <RadioButton
                 android:id="@+id/masculine_radio_button"
@@ -156,7 +156,7 @@
                 android:buttonTint="@color/gender_radio_button"
                 android:text="@string/genero_masculino"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
             <RadioButton
                 android:id="@+id/others_radio_button"
@@ -166,7 +166,7 @@
                 android:buttonTint="@color/gender_radio_button"
                 android:text="@string/outros_generos"
                 android:textColor="@color/gray_login_screen"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
         </LinearLayout>
     </LinearLayout>
 

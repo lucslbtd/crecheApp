@@ -11,32 +11,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:gravity="center"
         android:text="@string/txt_sucess"
         android:textColor="@color/login_txt_color"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight="wrap_content"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth="wrap_content" />
+         />
 
     <ImageView
         android:id="@+id/sucess_logo"
-        android:layout_width="239dp"
-        android:layout_height="226dp"
-        android:layout_marginTop="188dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:contentDescription="logo"
-        android:gravity="center"
         android:src="@drawable/icon_sucess"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight="wrap_content"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sucess_title"
-        app:layout_constraintWidth="wrap_content" />
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_continue"
@@ -44,18 +37,16 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginBottom="32dp"
         android:layout_marginEnd="24dp"
-        android:gravity="center"
-        android:padding="10dp"
         android:text="@string/btn_txt_continuar"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textSize="17sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sucess_logo" />
+         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

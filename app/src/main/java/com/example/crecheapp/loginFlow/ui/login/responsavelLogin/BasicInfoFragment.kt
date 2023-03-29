@@ -18,16 +18,15 @@ class BasicInfoFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentCadastroInfoBasicasBinding.inflate(inflater, container, false)
-        nav()
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        nav()
+        navigationFragment()
     }
 
-    private fun nav() = with(binding) {
+    private fun navigationFragment() = with(binding) {
         proceedButton.setOnClickListener {
             view?.let { it1 -> Navigation.findNavController(it1).navigate(R.id.action_basicInfoFragment_to_adressInfoFragment) }
         }

@@ -7,18 +7,18 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.example.crecheapp.R
-import com.example.crecheapp.databinding.FragmentAdressScreenBinding
+import com.example.crecheapp.databinding.FragmentChildInfoBinding
 
-class AdressInfoFragment : Fragment() {
+class ChildInfoFragment : Fragment() {
 
-    private lateinit var binding: FragmentAdressScreenBinding
+    private lateinit var binding: FragmentChildInfoBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentAdressScreenBinding.inflate(inflater, container, false)
+        binding = FragmentChildInfoBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -31,7 +31,7 @@ class AdressInfoFragment : Fragment() {
         proceedButton.setOnClickListener {
             view?.let { it1 ->
                 Navigation.findNavController(it1)
-                    .navigate(R.id.action_adressInfoFragment_to_childInfoFragment)
+                    .navigate(R.id.action_childInfoFragment_to_credentialsFragment)
             }
         }
     }

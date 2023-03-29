@@ -5,14 +5,31 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import com.example.crecheapp.R
+import com.example.crecheapp.databinding.FragmentCadastroInfoBasicasBinding
 
 class BasicInfoFragment : Fragment() {
+
+    private lateinit var binding: FragmentCadastroInfoBasicasBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.cadastro_info_basicas, container, false)
+    ): View {
+        binding = FragmentCadastroInfoBasicasBinding.inflate(inflater, container, false)
+        nav()
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        nav()
+    }
+
+    private fun nav() = with(binding) {
+        proceedButton.setOnClickListener {
+            view?.let { it1 -> Navigation.findNavController(it1).navigate(R.id.action_basicInfoFragment_to_adressInfoFragment) }
+        }
     }
 }

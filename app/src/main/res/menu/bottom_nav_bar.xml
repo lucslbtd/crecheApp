@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Child"
+        android:id="@+id/child"
+        android:icon="@drawable/child_icon"/>
+    <item android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/home_icon"/>
+    <item android:title="Profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/profile_icon"/>
+    <item android:title="Chat"
+        android:id="@+id/chat"
+        android:icon="@drawable/message_icon"/>
+</menu>

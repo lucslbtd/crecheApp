@@ -16,8 +16,15 @@ class ResponsavelFlowActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ParentSingUpFlowBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        navigationController()
+    }
+
+    private fun navigationController() {
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         val navController: NavController = navHostFragment.navController
         NavigationUI.setupActionBarWithNavController(this, navController)
     }
+
+
 }

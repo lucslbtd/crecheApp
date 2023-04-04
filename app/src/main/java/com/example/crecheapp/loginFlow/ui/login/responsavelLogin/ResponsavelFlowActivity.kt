@@ -25,6 +25,4 @@ class ResponsavelFlowActivity : AppCompatActivity() {
         val navController: NavController = navHostFragment.navController
         NavigationUI.setupActionBarWithNavController(this, navController)
     }
-
-
 }

@@ -44,9 +44,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             LatLng(-8.0023402, -34.8411129)
         )
 
-        val myLocation = LatLng(-7.9988269, -34.8378402)
+        val myLocation = LatLng(-7.9994928, -34.8396673)
 
-        // Add a marker in Sydney and move the camera
         val markerCreche = BitmapDescriptorFactory.fromResource(R.drawable.icon_creche)
         val markerMae = BitmapDescriptorFactory.fromResource(R.drawable.icon_crecheira)
 
@@ -66,7 +65,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             )
         }
 
+        val zoom = CameraUpdateFactory.newLatLngZoom(myLocation, 15.0F)
         mMap.addMarker(MarkerOptions().position(myLocation))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation))
+        mMap.animateCamera(zoom)
     }
 }

@@ -90,7 +90,7 @@
                 android:textSize="20sp"/>
 
             <EditText
-                android:id="@+id/nome_creche"
+                android:id="@+id/edt_name_parent"
                 android:layout_width="359dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"
@@ -112,7 +112,7 @@
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/data_nascimento_txt"
+                android:id="@+id/edt_birthday_parent"
                 android:layout_width="359dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="8dp"
@@ -134,7 +134,7 @@
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/contact"
+                android:id="@+id/edt_contact_parent"
                 android:layout_width="359dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="8dp"
@@ -157,7 +157,7 @@
                 android:textSize="20sp"/>
 
             <EditText
-                android:id="@+id/cpf_field"
+                android:id="@+id/edt_cpf_parent"
                 android:layout_width="359dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="8dp"

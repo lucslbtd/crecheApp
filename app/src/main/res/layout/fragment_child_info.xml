@@ -105,7 +105,7 @@
             android:textSize="15sp" />
 
         <EditText
-            android:id="@+id/data_nascimento_txt"
+            android:id="@+id/edt_birthday_parent"
             android:layout_width="359dp"
             android:layout_height="40dp"
             android:layout_marginTop="5dp"

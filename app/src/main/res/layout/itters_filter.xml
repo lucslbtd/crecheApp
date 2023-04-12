@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nos ajude a traçar o melhor perfil de creche para seu pequeno!"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atividades"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Usando um loop para criar 10 CheckBoxes -->
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Motora Fina"
+                android:buttonTint="@android:color/holo_blue_light"/>
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Atividade física"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arte"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arte"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Música e movimento"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blocos e movimento"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dramatizações"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Areia/Água"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Natureza/Ciências"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_blue_light"
+                android:text="Promoção da aceitação da diversidade" />
+            <!-- Adicione aqui mais CheckBoxes se necessário -->
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Linguagem oral e compreensão"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Usando um loop para criar 10 CheckBoxes -->
+            <CheckBox
+                android:id="@+id/checkbox11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Auxílio às crianças para compreenderem a linguagem"
+                android:buttonTint="@android:color/holo_blue_light"/>
+
+            <CheckBox
+                android:id="@+id/checkbox12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Auxílio às crianças para usarem a linguagem"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uso de livros"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <!-- Adicione aqui mais CheckBoxes se necessário -->
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rotinas de cuidado pessoal"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Usando um loop para criar 10 CheckBoxes -->
+            <CheckBox
+                android:id="@+id/checkbox14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chegada/Saída"
+                android:buttonTint="@android:color/holo_blue_light"/>
+
+            <CheckBox
+                android:id="@+id/checkbox15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Refeições/merendas"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sono"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Troca de fraldas/Uso de banheiro"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Práticas de saúde"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Práticas de segurança"
+                android:buttonTint="@android:color/holo_blue_light" />
+            <!-- Adicione aqui mais CheckBoxes se necessário -->
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Espaço e mobiliário"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Usando um loop para criar 10 CheckBoxes -->
+            <CheckBox
+                android:id="@+id/checkbox20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Espaço interno"
+                android:buttonTint="@android:color/holo_blue_light"/>
+
+            <CheckBox
+                android:id="@+id/checkbox21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Móveis para cuidados de rotina e brincadeiras"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Provisões para relaxamento e conforto"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Organização da sala"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Práticas de saúde"
+                android:buttonTint="@android:color/holo_blue_light" />
+
+            <CheckBox
+                android:id="@+id/checkbox25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Exposição de materiais para crianças"
+                android:buttonTint="@android:color/holo_blue_light" />
+            <!-- Adicione aqui mais CheckBoxes se necessário -->
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor máximo da mensalidade: "
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/edit_text_valor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Digite o valor"
+                android:textColorHint="#AAA"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:drawablePadding="8dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textAlignment="viewStart"
+                android:textCursorDrawable="@null"
+                android:maxLength="10"
+                android:digits="0123456789,. "/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+

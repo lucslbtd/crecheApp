@@ -68,4 +68,10 @@
     <string name="mae_tutorial_description">Encontre Mães-Crecheiras\n especializadas próximas a você\n para auxiliar nos cuidados da\n criança</string>
     <string name="creche_tutorial_description">Busque creches com\n caraterísticas específicas como\n atividades, linguagens, estrutura\n e rotina de cuidados de sua\n preferência</string>
     <string name="location_tutorial_description">Identifique os serviços no mapa através dos ícones</string>
+    <string name="acompanhamento">Acompanhamento</string>
+    <string name="ex_dia_e_data">Segunda-feira, 17/04/2023</string>
+    <string name="ex_alimento_1">9:30 - Banana amassada com leite</string>
+    <string name="ex_alimento_2">12:30 - Purê de batata, arroz e frango desfiado</string>
+    <string name="ex_alimento_3">15:00 - Maçã cortada</string>
+    <string name="ex_alimento_4">17:00 PM - Mamadeira</string>
 </resources>

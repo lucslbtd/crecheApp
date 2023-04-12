@@ -47,8 +47,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         val myLocation = LatLng(-7.9994928, -34.8396673)
 
-        val markerCreche = BitmapDescriptorFactory.fromResource(R.drawable.icon_creche)
-        val markerMae = BitmapDescriptorFactory.fromResource(R.drawable.icon_crecheira)
+        val markerCreche = BitmapDescriptorFactory.fromResource(R.drawable.creche_icon)
+        val markerMae = BitmapDescriptorFactory.fromResource(R.drawable.mae_crecheira_icon)
 
         for (location in locationsCreche) {
             mMap.addMarker(

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/txt_acompanhamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/acompanhamento"
+        android:textColor="@color/login_txt_color"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ex_dia_e_data"
+        android:textSize="16sp"
+        android:textColor="@color/gray_login_screen"
+        android:layout_below="@id/txt_acompanhamento"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:id="@+id/types_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_date"
+        android:layout_marginTop="20dp"
+        android:scrollbarThumbVertical="@null"
+        android:scrollbarThumbHorizontal="@null">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ate"
+                android:background="@color/background_color"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/activity"
+                android:background="@color/background_color"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bath"
+                android:background="@color/background_color"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/poop"
+                android:background="@color/background_color"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sleep"
+                android:background="@color/background_color"
+                android:layout_marginEnd="8dp"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/types_activity"
+        android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="238dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/translucid_balloon"
+                    android:padding="8dp"
+                    android:text="@string/ex_alimento_1"
+                    android:textColor="@color/login_txt_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="309dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/translucid_balloon"
+                    android:padding="8dp"
+                    android:text="@string/ex_alimento_2"
+                    android:textColor="@color/login_txt_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/translucid_balloon"
+                    android:padding="8dp"
+                    android:textColor="@color/login_txt_color"
+                    android:text="@string/ex_alimento_3"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/translucid_balloon"
+                    android:padding="8dp"
+                    android:textColor="@color/login_txt_color"
+                    android:text="@string/ex_alimento_4"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

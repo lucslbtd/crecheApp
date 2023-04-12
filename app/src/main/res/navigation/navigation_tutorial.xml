@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_tutorial"
+    app:startDestination="@id/tutorialStartFragment">
+
+    <fragment
+        android:id="@+id/tutorialStartFragment"
+        android:name="com.example.crecheapp.tutorial.TutorialStartFragment"
+        android:label="TutorialStartFragment" >
+        <action
+            android:id="@+id/action_tutorialStartFragment_to_tutorialMotherFragment"
+            app:destination="@id/tutorialMotherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tutorialMotherFragment"
+        android:name="com.example.crecheapp.tutorial.TutorialMotherFragment"
+        android:label="TutorialMotherFragment" >
+        <action
+            android:id="@+id/action_tutorialMotherFragment_to_tutorialCrecheFragment"
+            app:destination="@id/tutorialCrecheFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tutorialCrecheFragment"
+        android:name="com.example.crecheapp.tutorial.TutorialCrecheFragment"
+        android:label="TutorialCrecheFragment" >
+        <action
+            android:id="@+id/action_tutorialCrecheFragment_to_tutorialLocationFragment"
+            app:destination="@id/tutorialLocationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tutorialLocationFragment"
+        android:name="com.example.crecheapp.tutorial.TutorialLocationFragment"
+        android:label="TutorialLocationFragment" >
+        <action
+            android:id="@+id/action_tutorialLocationFragment_to_mapsActivity_FromTutorial"
+            app:destination="@id/mapsActivityFromTutorial" />
+    </fragment>
+    <activity
+        android:id="@+id/mapsActivityFromTutorial"
+        android:name="com.example.crecheapp.MapsActivity"
+        android:label="activity_maps"
+        tools:layout="@layout/activity_maps" />
+</navigation>

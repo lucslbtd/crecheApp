@@ -60,4 +60,12 @@
     <string name="creche_ex">Creche Saber e Viver</string>
     <string name="hora_ex">15:00</string>
     <string name="txt_ex">Tudo bem, vamos deixar as coisas dele prontas!</string>
+    <string name="welcome_tutorial_title">Bem-vindo ao Crescer</string>
+    <string name="mae_tutorial_title">Mães-Crecheiras</string>
+    <string name="creche_tutorial_title">Creches</string>
+    <string name="location_tutorial_title">Legenda do Mapa</string>
+    <string name="welcome_tutorial_description">Com o Crescer, você pode\n encontrar o serviço mais\n adequado para seu pequeno</string>
+    <string name="mae_tutorial_description">Encontre Mães-Crecheiras\n especializadas próximas a você\n para auxiliar nos cuidados da\n criança</string>
+    <string name="creche_tutorial_description">Busque creches com\n caraterísticas específicas como\n atividades, linguagens, estrutura\n e rotina de cuidados de sua\n preferência</string>
+    <string name="location_tutorial_description">Identifique os serviços no mapa através dos ícones</string>
 </resources>

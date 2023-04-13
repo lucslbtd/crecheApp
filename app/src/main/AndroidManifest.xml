@@ -9,27 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CrecheApp">
-
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
         <activity
             android:name=".loginFlow.ui.login.LoginActivity"
             android:exported="false" />
-
         <activity
             android:name=".loginFlow.ui.login.responsavelLogin.ResponsavelFlowActivity"
             android:exported="false" />
         <activity
             android:name=".tutorial.TutorialActivity"
             android:exported="false" />
-
         <activity
             android:name=".loginFlow.ui.login.SingUpActivity"
             android:exported="true"
             android:label="@string/sing_up_activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data
@@ -39,7 +34,13 @@
         <activity
             android:name=".MapsActivity"
             android:exported="true"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

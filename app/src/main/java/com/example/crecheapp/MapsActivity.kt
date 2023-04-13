@@ -2,7 +2,6 @@ package com.example.crecheapp
 
 import android.content.Context
 import android.os.Bundle
-import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import com.example.crecheapp.databinding.ActivityHomeMainBinding
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -71,4 +70,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation))
         mMap.animateCamera(zoom)
     }
+
 }
+

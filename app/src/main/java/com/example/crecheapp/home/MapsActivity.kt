@@ -1,9 +1,13 @@
-package com.example.crecheapp
+package com.example.crecheapp.home
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.crecheapp.R
 import com.example.crecheapp.chat.ChatActivity
 import com.example.crecheapp.databinding.ActivityHomeMainBinding
 import com.example.crecheapp.profile.ProfileActivity
@@ -36,6 +40,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         binding.navigationBar.selectedItemId = R.id.home
 
         navigationBar()
+        binding.toolbar.searchIcon.setOnClickListener {
+            openItersFilter()
+        }
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
@@ -102,4 +109,25 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             }
         }
     }
+
+    private fun openItersFilter() = with(binding) {
+        val ittersFragment = IttersFragment()
+        binding.navigationBar.visibility = View.GONE
+        binding.toolbar.root.visibility = View.GONE
+
+        ittersFragment.setOnDataListener(object : OnDataListener {
+            override fun onDataReceived(data: String) {
+                binding.navigationBar.visibility = View.VISIBLE
+                binding.toolbar.root.visibility = View.VISIBLE
+                Toast.makeText(context, data, Toast.LENGTH_SHORT).show()
+                //Log.d("MainActivity", "Dados recebidos: $data")
+            }
+        })
+
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container_itters, ittersFragment)
+            .addToBackStack(null)
+            .commit()
+    }
+
 }

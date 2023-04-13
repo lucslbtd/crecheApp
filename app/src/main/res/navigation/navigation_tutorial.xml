@@ -39,7 +39,7 @@
     </fragment>
     <activity
         android:id="@+id/mapsActivityFromTutorial"
-        android:name="com.example.crecheapp.MapsActivity"
+        android:name="com.example.crecheapp.home.MapsActivity"
         android:label="activity_maps"
         tools:layout="@layout/activity_maps" />
 </navigation>

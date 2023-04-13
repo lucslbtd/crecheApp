@@ -3,7 +3,7 @@ package com.example.crecheapp.chat
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.crecheapp.MapsActivity
+import com.example.crecheapp.home.MapsActivity
 import com.example.crecheapp.R
 import com.example.crecheapp.databinding.ActivityChatBinding
 import com.example.crecheapp.profile.ProfileActivity

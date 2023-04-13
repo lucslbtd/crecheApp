@@ -1,9 +1,12 @@
 package com.example.crecheapp
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.crecheapp.chat.ChatActivity
 import com.example.crecheapp.databinding.ActivityHomeMainBinding
+import com.example.crecheapp.profile.ProfileActivity
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -29,6 +32,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
+
+        binding.navigationBar.selectedItemId = R.id.home
+
+        navigationBar()
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
@@ -71,5 +78,28 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.animateCamera(zoom)
     }
 
+    private fun navigationBar() = with(binding) {
+        navigationBar.setOnItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.home -> {
+                    true
+                }
+                R.id.chat -> {
+                    val intent = Intent(this@MapsActivity, ChatActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                    true
+                }
+                R.id.profile -> {
+                    val intent = Intent(this@MapsActivity, ProfileActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                    true
+                }
+                else -> {
+                    false
+                }
+            }
+        }
+    }
 }
-

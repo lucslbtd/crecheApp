@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.crecheapp">
+    package="com.example.crecheapp" >
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CrecheApp">
+        android:theme="@style/Theme.CrecheApp" >
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chat.ChatActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -24,8 +30,7 @@
         <activity
             android:name=".loginFlow.ui.login.SingUpActivity"
             android:exported="true"
-            android:label="@string/sing_up_activity">
-        </activity>
+            android:label="@string/sing_up_activity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -34,7 +39,7 @@
         <activity
             android:name=".MapsActivity"
             android:exported="true"
-            android:label="@string/title_activity_maps">
+            android:label="@string/title_activity_maps" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

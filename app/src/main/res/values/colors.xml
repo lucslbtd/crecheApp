@@ -17,5 +17,6 @@
     <color name="ellipsis_button">#ADC9CC</color>
     <color name="exit_button">#F90101</color>
     <color name="grey">#C0C0C0</color>
+    <color name="translucent_white">#80FFFFFF</color>
     <color name="yellow_button">#FFD666</color>
 </resources>

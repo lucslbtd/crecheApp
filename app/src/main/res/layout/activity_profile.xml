@@ -220,7 +220,7 @@
         android:layout_marginTop="120dp"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/filho_info"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_bar">
+        app:layout_constraintBottom_toTopOf="@+id/navigation_bar">
 
         <TextView
         android:id="@+id/sair"
@@ -248,48 +248,17 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/bottom_navigation_bar"
-        android:layout_width="match_parent"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_bar"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/top_screen_bar"
-        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/exit_layout">
-
-        <ImageButton
-            android:id="@+id/home_button"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/top_screen_bar"
-            android:src="@drawable/home_icon" />
-
-        <ImageButton
-            android:id="@+id/search_button"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/top_screen_bar"
-            android:src="@drawable/child_icon" />
-
-        <ImageButton
-            android:id="@+id/favorites_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/top_screen_bar"
-            android:src="@drawable/message_icon" />
-
-        <ImageButton
-            android:id="@+id/profile_button"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/top_screen_bar"
-            android:src="@drawable/profile_icon" />
-
-    </LinearLayout>
+        android:background="@color/white"
+        app:itemIconTint="@color/button_login_color"
+        app:itemTextColor="@color/button_login_color"
+        app:menu="@menu/bottom_nav_bar"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.crecheapp.home.MapsActivity
 import com.example.crecheapp.R
 import com.example.crecheapp.databinding.ActivityChatBinding
+import com.example.crecheapp.followup.FollowUpActivity
 import com.example.crecheapp.profile.ProfileActivity
 
 class ChatActivity : AppCompatActivity() {
@@ -33,6 +34,12 @@ class ChatActivity : AppCompatActivity() {
                 }
                 R.id.home -> {
                     val intent = Intent(this@ChatActivity, MapsActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                    true
+                }
+                R.id.child -> {
+                    val intent = Intent(this@ChatActivity, FollowUpActivity::class.java)
                     startActivity(intent)
                     finish()
                     true

@@ -3,13 +3,14 @@ package com.example.crecheapp.home
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.crecheapp.R
 import com.example.crecheapp.chat.ChatActivity
 import com.example.crecheapp.databinding.ActivityHomeMainBinding
+import com.example.crecheapp.followup.FollowUpActivity
+import com.example.crecheapp.home.model.LocationObject
 import com.example.crecheapp.profile.ProfileActivity
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -49,13 +50,13 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap = googleMap
 
         val locationsCreche = listOf(
-            LatLng(-7.9934779, -34.8402871),
-            LatLng(-7.9879758, -34.8388384)
+            LocationObject("Creche1", "Creche", LatLng(-7.9934779, -34.8402871)),
+            LocationObject("Creche2", "Creche", LatLng(-7.9879758, -34.8388384))
         )
 
         val locationsMaes = listOf(
-            LatLng(-7.9812184, -34.836993),
-            LatLng(-8.0023402, -34.8411129)
+            LocationObject("Mother1", "Mother", LatLng(-7.9812184, -34.836993)),
+            LocationObject("Mother2", "Mother", LatLng(-8.0023402, -34.8411129))
         )
 
         val myLocation = LatLng(-7.9994928, -34.8396673)
@@ -66,7 +67,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         for (location in locationsCreche) {
             mMap.addMarker(
                 MarkerOptions()
-                    .position(location)
+                    .position(location.latLng)
                     .icon(markerCreche)
             )
         }
@@ -74,7 +75,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         for (location in locationsMaes) {
             mMap.addMarker(
                 MarkerOptions()
-                    .position(location)
+                    .position(location.latLng)
                     .icon(markerMae)
             )
         }
@@ -83,6 +84,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.addMarker(MarkerOptions().position(myLocation))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation))
         mMap.animateCamera(zoom)
+        validateMarker(locationsCreche, locationsMaes)
     }
 
     private fun navigationBar() = with(binding) {
@@ -99,6 +101,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 }
                 R.id.profile -> {
                     val intent = Intent(this@MapsActivity, ProfileActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                    true
+                }
+                R.id.child -> {
+                    val intent = Intent(this@MapsActivity, FollowUpActivity::class.java)
                     startActivity(intent)
                     finish()
                     true
@@ -120,7 +128,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 binding.navigationBar.visibility = View.VISIBLE
                 binding.toolbar.root.visibility = View.VISIBLE
                 Toast.makeText(context, data, Toast.LENGTH_SHORT).show()
-                //Log.d("MainActivity", "Dados recebidos: $data")
+                // Log.d("MainActivity", "Dados recebidos: $data")
             }
         })
 
@@ -128,6 +136,21 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             .replace(R.id.fragment_container_itters, ittersFragment)
             .addToBackStack(null)
             .commit()
+    }
+
+    private fun validateMarker(listCreche: List<LocationObject>, listMother: List<LocationObject>) {
+        mMap.setOnMapClickListener {
+            for (local in listCreche) {
+                if (local.type == "Creche") {
+                    true
+                }
+            }
+            for (local in listCreche) {
+                if (local.type == "Mother") {
+                    true
+                }
+            }
+        }
     }
 
 }

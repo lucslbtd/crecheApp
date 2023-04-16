@@ -19,4 +19,9 @@
     <color name="grey">#C0C0C0</color>
     <color name="translucent_white">#80FFFFFF</color>
     <color name="yellow_button">#FFD666</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue">#2196F3</color>
+    <color name="green">#4CAF50</color>
 </resources>

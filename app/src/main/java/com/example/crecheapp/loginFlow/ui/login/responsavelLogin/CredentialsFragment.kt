@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.Navigation
 import com.example.crecheapp.R
 import com.example.crecheapp.databinding.FragmentCredentialsScreenBinding
@@ -12,6 +13,7 @@ import com.example.crecheapp.databinding.FragmentCredentialsScreenBinding
 class CredentialsFragment : Fragment() {
 
     private lateinit var binding: FragmentCredentialsScreenBinding
+    private val viewModel: SignUpViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -29,10 +31,13 @@ class CredentialsFragment : Fragment() {
 
     private fun navigationFragment() = with(binding) {
         btnRegistrate.setOnClickListener {
+            viewModel.signUpData.user.email = email.toString()
+            viewModel.signUpData.user.password = fillPassword.toString()
             view?.let { it1 ->
                 Navigation.findNavController(it1)
                     .navigate(R.id.action_credentialsFragment_to_successFragment)
             }
         }
     }
+
 }

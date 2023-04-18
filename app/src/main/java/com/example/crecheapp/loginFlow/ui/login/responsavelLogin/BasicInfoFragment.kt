@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.Navigation
 import com.example.crecheapp.R
 import com.example.crecheapp.databinding.FragmentCadastroInfoBasicasBinding
@@ -13,6 +13,8 @@ import com.example.crecheapp.databinding.FragmentCadastroInfoBasicasBinding
 class BasicInfoFragment : Fragment() {
 
     private lateinit var binding: FragmentCadastroInfoBasicasBinding
+    private val viewModel: SignUpViewModel by activityViewModels()
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -29,6 +31,11 @@ class BasicInfoFragment : Fragment() {
 
     private fun navigationFragment() = with(binding) {
         proceedButton.setOnClickListener {
+            viewModel.signUpData.user.name = edtNameParent.toString()
+            viewModel.signUpData.user.birthday_date = edtParentBirthday.toString()
+            viewModel.signUpData.user.phone_number = edtContactParent.toString()
+            viewModel.signUpData.user.document = edtCpfParent.toString()
+            viewModel.signUpData.user.gender = "Masculino"
             view?.let { it1 -> Navigation.findNavController(it1).navigate(R.id.action_basicInfoFragment_to_adressInfoFragment) }
         }
     }

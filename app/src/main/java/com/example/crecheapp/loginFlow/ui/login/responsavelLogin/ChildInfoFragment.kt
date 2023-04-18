@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.Navigation
 import com.example.crecheapp.R
 import com.example.crecheapp.databinding.FragmentChildInfoBinding
@@ -12,6 +13,7 @@ import com.example.crecheapp.databinding.FragmentChildInfoBinding
 class ChildInfoFragment : Fragment() {
 
     private lateinit var binding: FragmentChildInfoBinding
+    private val viewModel: SignUpViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -29,6 +31,9 @@ class ChildInfoFragment : Fragment() {
 
     private fun navigationFragment() = with(binding) {
         proceedButton.setOnClickListener {
+            viewModel.signUpData.child.name = nomeCriancaTxt.toString()
+            viewModel.signUpData.child.birthday_date = edtBirthdayChild.toString()
+            viewModel.signUpData.child.gender = "Masculino"
             view?.let { it1 ->
                 Navigation.findNavController(it1)
                     .navigate(R.id.action_childInfoFragment_to_credentialsFragment)

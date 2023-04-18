@@ -4,22 +4,26 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.example.crecheapp.home.MapsActivity
 import com.example.crecheapp.databinding.LoginScreenBinding
+import com.example.crecheapp.home.MapsActivity
+import com.example.crecheapp.loginFlow.data.LoginRepository
 
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: LoginScreenBinding
     private lateinit var context: Context
+    private val viewModel: LoginViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = LoginScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
         context = this
-        openMaps()
+
         backTSingUp()
+        openMaps()
     }
 
     private fun verifyFields(): Boolean = with(binding) {
@@ -48,6 +52,7 @@ class LoginActivity : AppCompatActivity() {
     private fun openMaps() = with(binding) {
         btnLogin.setOnClickListener {
             if (verifyFields()) {
+                //onClickLoginButton()
                 val intent = Intent(context, MapsActivity::class.java)
                 startActivity(intent)
             }
@@ -59,5 +64,11 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(context, SingUpActivity::class.java)
             startActivity(intent)
         }
+    }
+
+    fun onClickLoginButton() = with(binding) {
+        val email = email.toString()
+        val password = password.toString()
+        viewModel.login(email, password)
     }
 }

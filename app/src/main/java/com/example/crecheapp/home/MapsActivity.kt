@@ -139,15 +139,26 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     private fun validateMarker(listCreche: List<LocationObject>, listMother: List<LocationObject>) {
+        val crecheFragment = CrecheFragment()
         mMap.setOnMapClickListener {
             for (local in listCreche) {
                 if (local.type == "Creche") {
-                    true
+                   // binding.navigationBar.visibility = View.GONE
+                    binding.toolbar.root.visibility = View.GONE
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container_creche, crecheFragment)
+                        .addToBackStack(null)
+                        .commit()
                 }
             }
             for (local in listCreche) {
                 if (local.type == "Mother") {
-                    true
+                    binding.navigationBar.visibility = View.GONE
+                    binding.toolbar.root.visibility = View.GONE
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container_creche, crecheFragment)
+                        .addToBackStack(null)
+                        .commit()
                 }
             }
         }

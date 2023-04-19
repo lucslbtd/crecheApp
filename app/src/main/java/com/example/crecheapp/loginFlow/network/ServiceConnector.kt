@@ -1,13 +1,17 @@
 package com.example.crecheapp.loginFlow.network
 
 import com.example.crecheapp.loginFlow.model.*
-import retrofit2.Response
+import com.google.gson.GsonBuilder
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+
 class ServiceConnector {
+
+
+
     private val retrofit = Retrofit.Builder()
-        .baseUrl("https://b64b-2804-7f7-de9d-5333-1564-e846-aa29-db9e.ngrok-free.app")
+        .baseUrl("https://1876-2804-7f7-de9d-5333-4065-1a0c-179f-5ff3.ngrok-free.app/")
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 

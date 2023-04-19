@@ -31,8 +31,9 @@ class CredentialsFragment : Fragment() {
 
     private fun navigationFragment() = with(binding) {
         btnRegistrate.setOnClickListener {
-            viewModel.signUpData.user.email = email.toString()
-            viewModel.signUpData.user.password = fillPassword.toString()
+            viewModel.signUpData.user.email = email.text.toString()
+            viewModel.signUpData.user.password = fillPassword.text.toString()
+            viewModel.signUpData.user.account_type = "pai"
             view?.let { it1 ->
                 Navigation.findNavController(it1)
                     .navigate(R.id.action_credentialsFragment_to_successFragment)

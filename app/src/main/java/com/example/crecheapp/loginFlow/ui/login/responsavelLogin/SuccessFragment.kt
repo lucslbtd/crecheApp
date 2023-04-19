@@ -1,5 +1,6 @@
 package com.example.crecheapp.loginFlow.ui.login.responsavelLogin
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,8 @@ import androidx.navigation.Navigation
 import com.example.crecheapp.R
 import com.example.crecheapp.databinding.SucessScreenBinding
 import com.example.crecheapp.loginFlow.model.SignUpRequest
+import com.example.crecheapp.loginFlow.ui.login.SingUpActivity
+import com.example.crecheapp.tutorial.TutorialActivity
 
 class SuccessFragment : Fragment() {
 
@@ -22,7 +25,6 @@ class SuccessFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        //onClickRegisterButton()
         binding = SucessScreenBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -34,7 +36,10 @@ class SuccessFragment : Fragment() {
 
     private fun navigationToMap() = with(binding) {
         btnContinue.setOnClickListener {
-            view?.let { it1 -> Navigation.findNavController(it1).navigate(R.id.action_successFragment_to_tutorialActivity) }
+            onClickRegisterButton()
+            val intent = Intent(context, SingUpActivity::class.java)
+            startActivity(intent)
+            //view?.let { it1 -> Navigation.findNavController(it1).navigate(R.id.action_successFragment_to_tutorialActivity) }
         }
     }
 

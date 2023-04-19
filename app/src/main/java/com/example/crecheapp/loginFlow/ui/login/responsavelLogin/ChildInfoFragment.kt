@@ -31,9 +31,9 @@ class ChildInfoFragment : Fragment() {
 
     private fun navigationFragment() = with(binding) {
         proceedButton.setOnClickListener {
-            viewModel.signUpData.child.name = nomeCriancaTxt.toString()
-            viewModel.signUpData.child.birthday_date = edtBirthdayChild.toString()
-            viewModel.signUpData.child.gender = "Masculino"
+            viewModel.signUpData.child.name = nomeCriancaTxt.text.toString()
+            viewModel.signUpData.child.birthday_date = "2077-01-01"
+            viewModel.signUpData.child.gender = "male"
             view?.let { it1 ->
                 Navigation.findNavController(it1)
                     .navigate(R.id.action_childInfoFragment_to_credentialsFragment)

@@ -31,11 +31,11 @@ class BasicInfoFragment : Fragment() {
 
     private fun navigationFragment() = with(binding) {
         proceedButton.setOnClickListener {
-            viewModel.signUpData.user.name = edtNameParent.toString()
-            viewModel.signUpData.user.birthday_date = edtParentBirthday.toString()
-            viewModel.signUpData.user.phone_number = edtContactParent.toString()
-            viewModel.signUpData.user.document = edtCpfParent.toString()
-            viewModel.signUpData.user.gender = "Masculino"
+            viewModel.signUpData.user.name = edtNameParent.text.toString()
+            viewModel.signUpData.user.birthday_date = "2077-01-01"
+            viewModel.signUpData.user.phone_number = edtContactParent.text.toString()
+            viewModel.signUpData.user.document = edtCpfParent.text.toString()
+            viewModel.signUpData.user.gender = "male"
             view?.let { it1 -> Navigation.findNavController(it1).navigate(R.id.action_basicInfoFragment_to_adressInfoFragment) }
         }
     }

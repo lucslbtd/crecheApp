@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.crecheapp.databinding.LoginScreenBinding
 import com.example.crecheapp.home.MapsActivity
 import com.example.crecheapp.loginFlow.data.LoginRepository
+import com.example.crecheapp.tutorial.TutorialActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -52,8 +53,8 @@ class LoginActivity : AppCompatActivity() {
     private fun openMaps() = with(binding) {
         btnLogin.setOnClickListener {
             if (verifyFields()) {
-                //onClickLoginButton()
-                val intent = Intent(context, MapsActivity::class.java)
+                onClickLoginButton()
+                val intent = Intent(context, TutorialActivity::class.java)
                 startActivity(intent)
             }
         }
@@ -67,8 +68,8 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun onClickLoginButton() = with(binding) {
-        val email = email.toString()
-        val password = password.toString()
+        val email = email.text.toString()
+        val password = password.text.toString()
         viewModel.login(email, password)
     }
 }

@@ -32,10 +32,12 @@ class AdressInfoFragment : Fragment() {
 
     private fun navigationFragment() = with(binding) {
         proceedButton.setOnClickListener {
-            viewModel.signUpData.address.street = ruaTxt.toString()
-            viewModel.signUpData.address.city = cidade.toString()
-            viewModel.signUpData.address.postal_code = cep.toString()
-            viewModel.signUpData.address.complement = complemento.toString()
+            viewModel.signUpData.address.street = ruaTxt.text.toString()
+            viewModel.signUpData.address.city = cidade.text.toString()
+            viewModel.signUpData.address.postal_code = cep.text.toString()
+            viewModel.signUpData.address.complement = complemento.text.toString()
+            viewModel.signUpData.address.number = 69
+
 
             view?.let { it1 ->
                 Navigation.findNavController(it1)
